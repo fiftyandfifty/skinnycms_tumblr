@@ -1,0 +1,36 @@
+= SkinnyCmsTumblr
+
+== Description
+
+This is a Rails::Engine.
+It generates TUMBLR-API functional as extension for SKINNYCMS BASIC in your application:
+
+* migrations
+
+* models
+
+* controllers
+
+* views
+
+* css styles
+
+* routes and rake tasks
+
+== Instalation (for Rails 3)
+
+Add to Gemfile:
+
+  gem 'skinnycms_tumblr', :git => 'git@github.com:fiftyandfifty/skinnycms_tumblr.git'
+
+Then:
+
+  bundle install
+
+  rails generate skinnycms_tumblr
+
+== Copyright
+
+Copyright (c) 2010 Fifty & Fifty. See LICENSE.txt for
+further details.
+

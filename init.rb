@@ -1,0 +1,2 @@
+require 'skinnycms_tumblr'
+

@@ -1,0 +1,9 @@
+Description:
+  This is the skinnycms_tumblr generator.
+
+Example:
+  rails generate skinnycms_tumblr
+
+  This install SKINNYCMS_TUMBLR extension to your application.
+  See the README for more details.
+
