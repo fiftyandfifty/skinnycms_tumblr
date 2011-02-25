@@ -10,7 +10,9 @@ class SkinnycmsTumblrGenerator < Rails::Generators::Base
     Dir.chdir("#{RAILS_ROOT}/")
     gemfile = IO.read('Gemfile')
     run "gem install tumblr-api -v '0.1.4'" if gemfile.scan("tumblr-api").size < 1
+    run "gem install whenever -v '0.6.2'" if gemfile.scan("whenever").size < 1
     insert_into_file "Gemfile", "gem 'tumblr-api', '0.1.4', :require => 'tumblr'\n\n", :before => "gem 'skinnycms'" if gemfile.scan("tumblr-api").size < 1
+    insert_into_file "Gemfile", "gem 'whenever', '0.6.2'\n\n", :before => "gem 'skinnycms'" if gemfile.scan("whenever").size < 1
     run "bundle install"
     run "rails generate skinnycms_tumblr_migrations"
 

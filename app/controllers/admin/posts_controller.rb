@@ -1,8 +1,9 @@
 class Admin::PostsController < ApplicationController
+
   def force_reload_posts
     update_cached_posts
-    
-    redirect_to(admin_settings_path)
+
+    redirect_to(admin_modules_path)
   end
 
   def login_and_get_tumblr_user
@@ -16,8 +17,9 @@ class Admin::PostsController < ApplicationController
   end
 
   def update_cached_posts
+
     Admin::PostsController.new.login_and_get_tumblr_user
-    
+
     max_cache_length_in_minutes = 300
     tumblr_cache_sample = CacheTumblrPost.first(:conditions => "incomplete != 1")
 

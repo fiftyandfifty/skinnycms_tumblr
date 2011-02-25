@@ -1,7 +1,6 @@
 namespace :skinnycms_tumblr do
-  desc "Greeting rake task from SkinnyCmsTumblr Engine"
-  task :test do
-    puts "SkinnyCmsTumblr Engine succesfully installed!"
+  desc "Force Rebuild the tumblr cache"
+  task :force => :environment do
+    Admin::PostsController.new.update_cached_posts
   end
 end
-

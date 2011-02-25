@@ -2,18 +2,14 @@
 
 == Description
 
-This is a Rails::Engine.
-It generates TUMBLR-API functional as extension for SKINNYCMS BASIC in your application:
+This is a extension for SKINNYCMS basic engine.
+It includes TUMBLR-API functional to your application:
 
 * migrations
 
 * models
 
 * controllers
-
-* views
-
-* css styles
 
 * routes and rake tasks
 
@@ -28,6 +24,8 @@ Then:
   bundle install
 
   rails generate skinnycms_tumblr
+
+  and don't remember about restarting server
 
 == Copyright
 

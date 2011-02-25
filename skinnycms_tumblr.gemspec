@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{skinnycms_tumblr}
-  s.version = "0.1.0"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["RuslanHamidullin"]
-  s.date = %q{2011-02-22}
+  s.date = %q{2011-02-25}
   s.description = %q{long description}
   s.email = %q{ruslan.hamidullin@flatsoft.com}
   s.extra_rdoc_files = [
@@ -17,6 +17,9 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
+    ".rvmrc",
+    "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
@@ -24,23 +27,23 @@ Gem::Specification.new do |s|
     "app/controllers/admin/posts_controller.rb",
     "app/models/cache_tumblr_post.rb",
     "config/routes.rb",
+    "config/shedule.rb",
     "init.rb",
     "lib/generators/skinnycms_tumblr/USAGE",
     "lib/generators/skinnycms_tumblr/skinnycms_tumblr_generator.rb",
-    "lib/generators/skinnycms_tumblr/templates/add_skinnycms_fields_to_cache_tumblr_posts.rb",
-    "lib/generators/skinnycms_tumblr/templates/create_cache_tumblr_posts.rb",
+    "lib/generators/skinnycms_tumblr_migrations/USAGE",
+    "lib/generators/skinnycms_tumblr_migrations/migrations/add_skinnycms_fields_to_cache_tumblr_posts.rb",
+    "lib/generators/skinnycms_tumblr_migrations/migrations/create_cache_tumblr_posts.rb",
+    "lib/generators/skinnycms_tumblr_migrations/skinnycms_tumblr_migrations_generator.rb",
     "lib/skinnycms_tumblr.rb",
     "lib/skinnycms_tumblr/engine.rb",
     "lib/skinnycms_tumblr/railties/tasks.rake",
-    "nbproject/private/private.properties",
-    "nbproject/private/rake-d.txt",
-    "nbproject/project.properties",
-    "nbproject/project.xml"
+    "skinnycms_tumblr.gemspec"
   ]
   s.homepage = %q{https://github.com/fiftyandfifty/skinnycms_tumblr}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.5.2}
+  s.rubygems_version = %q{1.5.0}
   s.summary = %q{Lightweight CMS which leverages the lastest external social networking APIs}
 
   if s.respond_to? :specification_version then
